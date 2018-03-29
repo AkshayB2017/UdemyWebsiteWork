@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Guess the Finger!</title>
+   <style type="text/css">
+   
+   
+   </style>
+
+</head>
+
+<body>
+ <h1>Guess the number</h1>
+  <input type="text" id="first">
+  <button id="button">Guess the number</button>
+  <script type="text/javascript">
+      var j;
+      for(var i=0;i<10;i++)
+      {
+      document.getElementById("button").onclick=function()
+      { var a=document.getElementById("first").value;
+        if(a>5)
+          alert('Invalid entry');
+        else
+        { 
+        var b= Math.floor((Math.random()*6));
+        if(a==b)
+         { alert('You got it!');
+          j=j+1;}
+        else
+         { alert('Try again! The correct answer was'+b)
+
+         }}    
+      }  
+      } alert('No of correct guesses:'+j);
+
+  </script>
+</body>
+
+
+</html>

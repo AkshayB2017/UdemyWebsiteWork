@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+    <style type="text/css">
+         .circle
+         { 
+            width:200px;
+            height:200px;
+            border-radius: 50%;
+
+
+         }
+         #red-circle
+         {  float:left;
+             background-color:red;
+
+         }
+         #blue-circle
+         { float: right;
+           background-color: blue;
+
+         }
+         #green-circle
+         {
+             float:left;
+             background-color: green;
+         }
+         #random 
+         { float:none;
+           margin-top:200px;
+
+         }
+
+
+    </style>
+</head>
+<body>
+    <div class="circle" id="red-circle"></div>
+    <div class="circle" id="green-circle"></div>
+    <div class="circle" id="blue-circle"></div>
+    <span id="random">
+    <p id="text">Hello World!</p>
+    <button id="myButton">Click me!</button>
+    <p id="append">JavaScript is: </p>
+    <button id="secondButton">Append!</button>
+    <p id="style">Play with this line!</p>
+    <button id="styleButton">Style this line!</button>
+
+    <input type="text" id="textInput">
+    <button id="ThirdButton">Change Text</button>
+    <p id="Change"> This is some text</p>
+    <input id="myID" type="text">
+
+    <button id="yourButton">Click for Magic</button>
+
+    <script type="text/javascript">
+      document.getElementById("yourButton").onclick=function()
+      {  MagicEntered= document.getElementById("myID").value;
+         Magic="Kevin";
+         if(Magic==MagicEntered)
+            alert("You got it!!");
+        else{
+            alert("Try again?");
+        }
+
+      }
+      
+      
+      document.getElementById("ThirdButton").onclick=function()
+      {  var a="";
+         a=document.getElementById("textInput").value;
+         document.getElementById("Change").innerHTML=a;
+
+      }
+      document.getElementById('myButton').onclick=function()
+      {
+        document.getElementById('text').innerHTML="Hello Rob!";
+      }
+      document.getElementById("secondButton").onclick=function()
+      {
+          document.getElementById("append").innerHTML="I think"+document.getElementById("append").innerHTML+"awesome";
+      }
+      document.getElementById("styleButton").onclick=function()
+      {
+          document.getElementById("style").style.color="red";
+          document.getElementById("style").style.fontSize="50px";
+          document.getElementById("style").style.margin="20px";
+      }
+      document.getElementById("red-circle").onclick=function()
+      {
+          document.getElementById("red-circle").style.display="none";
+      }
+      document.getElementById("blue-circle").onclick=function()
+      {
+          document.getElementById("blue-circle").style.display="none";
+      }
+      document.getElementById("green-circle").onclick=function()
+      {
+          document.getElementById("green-circle").style.display="none";
+      }
+      myArray=new Array();
+      myArray[0]="pizza";
+      myArray[1]="chocolate";
+      console.log(myArray.length);
+
+
+
+    </script>
+    </span>
+
+</body>
+
+</html>
