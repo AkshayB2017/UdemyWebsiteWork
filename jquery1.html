@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuery1</title>
+<style type="text/css">
+#circle 
+{ margin:50px;
+  width:100px;
+  height:100px;  
+  border-radius:50%;
+  float: left;
+  background-color:aquamarine;
+}
+.square
+{ margin:50px;
+  width:100px;
+  height:100px;  
+  float: left;
+  background-color: blue;
+
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="circle"></div>
+<div class="square"></div>
+<div id="one"class="square"></div>
+<div class="square"></div>
+<p> This is text to be faded out.</p>
+
+ <iframe src="http://www.cnn.com"></iframe>
+<p id="a">This is some text</p>
+<button id="toggle">Toggle</button>
+
+<script type="text/javascript">
+      $("#circle").hover(function() {
+
+ $("iframe").attr("src","https://www.ecowebhosting.co.uk");
+      });
+      $(".square").click(function() {
+                 alert("You clicked on a "+ $(this).attr("id"));
+                 $(".square").css("backgroundColor","red");
+       });
+  $("#circle").click(function(){
+     $("#one").css("display","none");
+  });
+  $("#toggle").click(function(){
+     if($("#a").css("display") =="none")
+   { $("#a").fadeIn();
+   }
+    else{  $("#a").fadeOut();
+
+    }
+  });
+
+
+
+
+</script>
+
+
+</body>
+
+
+
+</html>
