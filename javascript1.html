@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+</head>
+<body onload="linkModifier()">
+    <p>This is before JavaScript</p>
+    <ul>
+        <li><a href="http://google.com/">Google</a></li>
+        <li><a href="http://www.nytimes.com/">NewYorkTimes</a></li>
+
+    </ul>
+    <script type="text/javascript">
+    document.write("Printed by JavaScript");   
+     function linkModifier()
+     {  for(var i=0;i<document.links.length;i++)
+      { document.links[i].href="http://wikipedia.com/";
+
+      }}
+    </script>
+</body>
+
+
+</html>
